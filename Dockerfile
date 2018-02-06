@@ -1,16 +1,19 @@
 FROM ubuntu:latest
+MAINTAINER Jana Eggink <jana.eggink@bbc.co.uk>
 
-RUN apt-get update -y && \
-    apt-get install -y python-pip python-dev
+ENV DEBIAN_FRONTEND noninteractive
 
-COPY ./requirements.txt /app/requirements.txt
+RUN apt-get update
+RUN apt-get install -y python python-pip python-virtualenv gunicorn
 
-WORKDIR /app
+# Setup flask application
+RUN mkdir -p /deploy/app
+COPY gunicorn_config.py /deploy/gunicorn_config.py
+COPY app /deploy/app
+RUN pip install -r /deploy/app/requirements.txt
+WORKDIR /deploy/app
 
-RUN pip install -r requirements.txt
+EXPOSE 5000
 
-COPY . /app
-
-ENTRYPOINT [ "python" ]
-
-CMD [ "app.py" ]
+# Start gunicorn
+CMD ["/usr/bin/gunicorn", "--config", "/deploy/gunicorn_config.py", "bramble:app"]
