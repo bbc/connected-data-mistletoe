@@ -1,21 +1,28 @@
-# Google Container Engine Skeleton Service
+# Bramble Microservice
 
-Skeleton Google Container Engine (GKE) service. Implemented with the Python 2
-[Flask](http://flask.pocoo.org/) microframework.
+Bramble microservice. Implemented with the Python 2
+[Flask](http://flask.pocoo.org/) microframework and running with
+[Green Unicorn](http://gunicorn.org/) Python WSGI HTTP Server.
 
 ## Run Locally
 1. Create a virtualenv, install dependencies:
 ```
 virtualenv env
 source env/bin/activate
-pip install -r requirements.txt
+pip3 install -r requirements.txt
 ```
 2. Run the service:
 ```
-python app.py
+python3 app/hello.py
 ```
 
 3. Visit the application at http://localhost:5000.
+
+## Tests
+Run tests using:
+```
+pytest
+```
 
 ## Building & Deployment
 
