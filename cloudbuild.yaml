@@ -1,7 +1,7 @@
 steps:
   - name: 'gcr.io/cloud-builders/git'
-    args: ['clone', 'https://github.com/bbc/connected-data-bramble']
+    args: ['clone', 'https://github.com/bbc/connected-data-rubus']
   - name: 'gcr.io/cloud-builders/docker'
-    args: ["build", "-t", "gcr.io/$PROJECT_ID/bramble:$REVISION_ID", "-f", "Dockerfile", "."]
+    args: ["build", "-t", "gcr.io/$PROJECT_ID/rubus:$REVISION_ID", "-f", "Dockerfile", "."]
 images:
-  - "gcr.io/$PROJECT_ID/bramble:$REVISION_ID"
+  - "gcr.io/$PROJECT_ID/rubus:$REVISION_ID"
