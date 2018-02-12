@@ -15,7 +15,7 @@ obj = {
         'SecondLevel' : [],
         'ThirdLevel' : []
       },
-      'MasterBrand' : 'bbc_webonly'
+      'MasterBrand' : 'bbc_webonly',
       'Tags' : [ 'Documentary (film)', 'Skinheads', 'Football' ],
       'Medium' : 'video',
     	'ContentURI' : 'http://www.bbc.co.uk/programmes/p00jy2zh',
@@ -34,7 +34,7 @@ obj = {
         'SecondLevel' : [],
         'ThirdLevel' : []
       },
-      'MasterBrand' : 'bbc_arts'
+      'MasterBrand' : 'bbc_arts',
       'Tags' : [ 'Sculptural', 'Sculpture', 'Venice Biennale', 'British Council', 'Pavilion', 'Labyrinth', 'Art' ],
       'Medium' : 'video',
       'ContentURI' : 'http://www.bbc.co.uk/programmes/p052hx45',
@@ -53,7 +53,7 @@ obj = {
         'SecondLevel' : [ 'Cricket' ],
         'ThirdLevel' : []
       },
-      'MasterBrand' : 'bbc_radio_five_live_sports_extra'
+      'MasterBrand' : 'bbc_radio_five_live_sports_extra',
       'Tags' : [ 'England', 'Cricket', 'The Ashes' ],
       'Medium' : 'video',
       'ContentURI' : 'http://www.bbc.co.uk/programmes/p05q56by',
@@ -72,7 +72,7 @@ obj = {
         'SecondLevel' : [],
         'ThirdLevel' : []
       },
-      'MasterBrand' : 'bbc_radio_four'
+      'MasterBrand' : 'bbc_radio_four',
       'Tags' : [ 'Cheerleading', 'Chants', 'Governing body', 'Pompoms', 'Skirts', 'World champions', 'Sport' ],
       'Medium' : 'audio',
       'ContentURI' : 'http://www.bbc.co.uk/programmes/p05fw6tq',
@@ -91,7 +91,7 @@ obj = {
         'SecondLevel' : [],
         'ThirdLevel' : []
       },
-      'MasterBrand' : 'bbc_webonly'
+      'MasterBrand' : 'bbc_webonly',
       'Tags' : [ 'Athletics', 'Sprinting', 'Prince Charles', 'Charles Kennedy', 'Charles Dickens', 'Athletics', 'Charles Darwin' ],
       'Medium' : 'video',
       'ContentURI' : 'http://www.bbc.co.uk/programmes/p05d6k3s',
