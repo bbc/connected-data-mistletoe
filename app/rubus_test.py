@@ -3,12 +3,12 @@ import json
 import os
 import pytest
 
-import bramble
+import rubus
 
 @pytest.fixture
 def client():
-    bramble.app.testing = True
-    return bramble.app.test_client()
+    rubus.app.testing = True
+    return rubus.app.test_client()
 
 def test_index(client):
     r = client.get('/')

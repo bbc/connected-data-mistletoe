@@ -1,6 +1,6 @@
-# Bramble Microservice
+# Rubus Microservice
 
-Bramble microservice. Implemented with the Python 2
+Rubus microservice. Implemented with the Python 3
 [Flask](http://flask.pocoo.org/) microframework and running with
 [Green Unicorn](http://gunicorn.org/) Python WSGI HTTP Server.
 
@@ -13,7 +13,7 @@ pip3 install -r requirements.txt
 ```
 2. Run the service:
 ```
-python3 app/hello.py
+python3 app/rubus.py
 ```
 
 3. Visit the application at http://localhost:5000.
