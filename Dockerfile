@@ -1,5 +1,5 @@
 FROM ubuntu:latest
-MAINTAINER Jana Eggink <jana.eggink@bbc.co.uk>
+MAINTAINER Bettina Hermant <bettina.hermant@bbc.co.uk>
 
 ENV DEBIAN_FRONTEND noninteractive
 
@@ -16,4 +16,4 @@ WORKDIR /deploy/app
 EXPOSE 5000
 
 # Start gunicorn
-CMD ["/usr/bin/gunicorn", "--config", "/deploy/gunicorn_config.py", "rubus:app"]
+CMD ["/usr/bin/gunicorn", "--config", "/deploy/gunicorn_config.py", "bristlecone:app"]
