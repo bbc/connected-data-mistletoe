@@ -6,6 +6,7 @@ import os
 from flask import current_app, Flask, render_template, request, jsonify
 
 from domain import root
+from domain.profiles import insights
 
 app = Flask(__name__)
 
@@ -13,6 +14,14 @@ app = Flask(__name__)
 def index():
     res = root.obj
     return jsonify(res)
+
+@app.route('/profiles', methods=['GET'])
+def insights():
+	user = request.args.get('user')
+	origin = request.args.get('origin')
+
+	res = insights.obj
+	return jsonify(res)
 
 @app.errorhandler(500)
 def server_error(e):
