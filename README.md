@@ -1,6 +1,6 @@
-# Rubus Microservice
+# Bristlecone Component
 
-Rubus microservice. Implemented with the Python 3
+Bristlecone Component. Implemented with the Python 3
 [Flask](http://flask.pocoo.org/) microframework and running with
 [Green Unicorn](http://gunicorn.org/) Python WSGI HTTP Server.
 
