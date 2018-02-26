@@ -3,12 +3,12 @@ import json
 import os
 import pytest
 
-import rubus
+import mistletoe
 
 @pytest.fixture
 def client():
-    rubus.app.testing = True
-    return rubus.app.test_client()
+    mistletoe.app.testing = True
+    return mistletoe.app.test_client()
 
 def test_index(client):
     r = client.get('/')

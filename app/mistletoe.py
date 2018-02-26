@@ -5,7 +5,7 @@ import os
 
 from flask import current_app, Flask, render_template, request, jsonify
 
-from domain import root, profilesInsightsSegmentation
+from domain import root, profilesInsights
 
 app = Flask(__name__)
 
@@ -14,9 +14,9 @@ def index():
     res = root.obj
     return jsonify(res)
 
-@app.route('/profilesInsightsSegmentation', methods=['GET'])
-def profilesInsightsSegmentation():
-    res = profilesInsightsSegmentation.obj
+@app.route('/profiles/?user=NkiahWTp0gXmbZXUGSv4kwO2jJUO593f2KjCwvBqrV0/?origin=insights', methods=['GET'])
+def profilesInsights():
+    res = profilesInsights.obj
     return jsonify(res)
 
 @app.errorhandler(500)
