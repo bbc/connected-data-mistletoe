@@ -1,7 +1,7 @@
 steps:
   - name: 'gcr.io/cloud-builders/git'
-    args: ['clone', 'https://github.com/bbc/connected-data-bristlecone']
+    args: ['clone', 'https://github.com/bbc/connected-data-mistletoe']
   - name: 'gcr.io/cloud-builders/docker'
     args: ["build", "-t", "gcr.io/$PROJECT_ID/rubus:$REVISION_ID", "-f", "Dockerfile", "."]
 images:
-  - "gcr.io/$PROJECT_ID/bristlecone:$REVISION_ID"
+  - "gcr.io/$PROJECT_ID/mistletoe:$REVISION_ID"
