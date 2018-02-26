@@ -17,11 +17,11 @@ def index():
 
 @app.route('/profiles', methods=['GET'])
 def insights():
-	user = request.args.get('user')
-	origin = request.args.get('origin')
+    user = request.args.get('user')
+    origin = request.args.get('origin')
 
-	res = insights.obj
-	return jsonify(res)
+    res = insights.obj
+    return jsonify(res)
 
 @app.errorhandler(500)
 def server_error(e):
