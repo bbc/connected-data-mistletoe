@@ -13,7 +13,7 @@ COPY app /deploy/app
 RUN pip install -r /deploy/app/requirements.txt
 WORKDIR /deploy/app
 
-EXPOSE 5000
+EXPOSE 5004
 
 # Start gunicorn
 CMD ["/usr/bin/gunicorn", "--config", "/deploy/gunicorn_config.py", "mistletoe:app"]
